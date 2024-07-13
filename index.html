@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .parent1 {
+        background-color: black;
+        color: white;
+        height: 100vh;
+     }
+
+     .h1 {
+        text-align: center;
+        padding-top: 100px;
+        font-weight: 100px;
+     }
+      .p {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+      }
+      .projectimage{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .projectimage div img{
+        width: 300px; height: 300px; object-fit: cover;
+      }
+      .projectimage div {
+        width: calc(100%/5);
+      }
+      @media (max-width:1024px){  
+        .projectimage div { 
+         width: calc(100%/4);
+        }
+      }
+    @media (max-width:834px) {
+        .projectimage div{
+          width: calc(100%/3);  
+        }
+    }
+
+    @media (max-width:768px) {
+        .projectimage div{
+         width: calc(100%/2);   
+        }
+        
+    } 
+
+    @media (max-width:480px) {
+        .projectimage div{
+         width: calc(100%/1);   
+        }
+
+    }
+     .background_image{
+         height: 150vh;
+        
+         background-image: url(bigger.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+     }
+    .what {
+       text-align: center;
+       padding-top: 100px;
+    }
+    .p2{
+       text-align: center;
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       padding-top: 50%;
+    }
+    .pain{
+        display: flex;
+         justify-content: center;
+         height: 100px;
+         width: 100px;
+         border-radius: 100%;
+         align-items: center;
+         margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+    .pain{
+      height: 100px;
+         width: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Project section  -->
+    <div class="parent1">
+    <div> 
+<h1 class="h1">Our Latest Project</h1>
+<p class="p">Here is our latest project,You will love them</p>
+    </div>
+    <div class="projectimage">
+     <div><img src="pc1.jpg"></div>
+     <div><img src="pc2.jpg"></div>
+     <div><img src="pc3.jpg"></div>
+     <div><img src="pc4.jpg"></div>
+     <div><img src="pc5.jpg"></div>
+     <div><img src="pc6.jpg"/></div>  
+     <div><img src="pc7.jpg"/></div>
+     <div><img src="pc8.jpg"/></div>
+     <div><img src="pc9.jpg"/></div>
+     <div><img src="pc10.jpg"/></div>
+    </div>
+    <!-- project section -->
+    <!-- testimony -->
+<div class="background_image">
+<h2 class="What">What our customers say</h2>
+<p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+     Sit officia doloribus odio fuga recusandae deserunt neque,
+      obcaecati impedit tempore a nisi modi id ut asperiores consectetur,
+       laborum consequuntur beatae eligendi?
+<div class="pain">
+    <img src="godlike.jpg";/>
+
+</div>
+</p>
+</div>
+<!-- testimony -->
+    </div>
+    <!-- Project section -->
+</body>
+</html>
